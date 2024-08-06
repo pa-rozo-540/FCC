@@ -12,9 +12,9 @@
     <form id="survey-form">
       <!--name, email, age-->
       <fieldset>
-            <label for="name">Enter Your Name: <input id="name" name="name" type="text" required /></label>
-            <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
-            <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label>
+        <label id= "name-label" for="name">Name <input id="name" name="name" type="text" placeholder="Enter Your Name" required /></label>
+        <label id= "email-label" for="email"> Email <input id="email" name="email" type="email" placeholder="Enter Your Email"required /></label>
+        <label id= "number-label" for="number">Your Age (years) <input id="number" type="number" name="age" min="5" max="120" placeholder="Enter Your Age" /></label>
       </fieldset>
 
       <!--radio: game-->
@@ -38,38 +38,39 @@
         </label>
       </fieldset>
 
-      <!--checkbox: fave part-->
+      <!--checkbox: fave part -->
       <fieldset>
         <label for="favourite-part">
           <legend>What were your favourite parts about the game?</legend>
-          <label for="characters"><input class="inline" id="characters" name="favourite-part" type="checkbox"/>Characters</a></label>
-          <label for="gameplay"><input class="inline" id="gameplay" name="favourite-part" type="checkbox"/>Gameplay</a></label>
-          <label for="graphics"><input class="inline" id="graphics" name="favourite-part" type="checkbox"/>Graphics</a></label>
-          <label for="soundtrack"><input class="inline" id="soundtrack" name="favourite-part" type="checkbox"/>Soundtrack</a></label>
-          <label for="story"><input class="inline" id="story" name="favourite-part" type="checkbox"/>Story</a></label>
+          <legend>What should we improve on?</legend>
+          <label><input name="favourite-part" value="characters" type="checkbox" class="inline"/>Characters</a></label>
+          <label><input name="favourite-part" value="gameplay" type="checkbox" class="inline"/>Gameplay</a></label>
+          <label><input name="favourite-part" value="graphics" type="checkbox" class="inline"/>Graphics</a></label>
+          <label><input name="favourite-part" value="soundtrack" type="checkbox" class="inline"/>Soundtrack</a></label>
+          <label><input name="favourite-part" value="story" type="checkbox" class="inline"/>Story</a></label>
         </label>
       </fieldset>
       <!--checkbox: least fave-->>
       <fieldset>
         <label for="least-fave-part">
           <legend>What should we improve on?</legend>
-          <label for="characters"><input class="inline" id="characters" name="least-fave-part" type="checkbox"/>Characters</a></label>
-          <label for="gameplay"><input class="inline" id="gameplay" name="least-fave-part" type="checkbox"/>Gameplay</a></label>
-          <label for="graphics"><input class="inline" id="graphics" name="least-fave-part" type="checkbox"/>Graphics</a></label>
-          <label for="soundtrack"><input class="inline" id="soundtrack" name="least-fave-part" type="checkbox"/>Soundtrack</a></label>
-          <label for="story"><input class="inline" id="story" name="least-fave-part" type="checkbox"/>Story</a></label>
+          <label><input name="least-fave-part" value="characters" type="checkbox" class="inline"/>Characters</a></label>
+          <label><input name="least-fave-part" value="gameplay" type="checkbox" class="inline"/>Gameplay</a></label>
+          <label><input name="least-fave-part" value="graphics" type="checkbox" class="inline"/>Graphics</a></label>
+          <label><input name="least-fave-part" value="soundtrack" type="checkbox" class="inline"/>Soundtrack</a></label>
+          <label><input name="least-fave-part" value="story" type="checkbox" class="inline"/>Story</a></label>
         </label>
       </fieldset>
 
       <!--textarea-->
       <fieldset>
-          <label for="feedback">Tell us more!:
-            <textarea id="feedback" name="feedback" rows="3" cols="30" placeholder="I liked the part where the cat..."></textarea>
+          <label for="additional-comments">Tell us more!:
+            <textarea id="additional-comments" name="feedback" rows="3" cols="30" placeholder="I liked the part where the cat..."></textarea>
           </label>
         </fieldset>
 
       <!--submit-->
-      <input type="submit" value="Submit" />
+      <input type="submit" id="Submit" />
     </form>
   </body>
 </html>
