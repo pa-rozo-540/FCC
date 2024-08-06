@@ -10,56 +10,66 @@
     <h1 id="title">Cat Game Survey Form</h1> 
     <p id="description">Please tell us about your experience</p>    
     <form id="survey-form">
-        <!--name, email, age-->
-        <fieldset>
+      <!--name, email, age-->
+      <fieldset>
             <label for="name">Enter Your Name: <input id="name" name="name" type="text" required /></label>
             <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
             <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label>
-        </fieldset>
+      </fieldset>
 
       <!--radio: game-->
-        <fieldset>
-            <legend>Which game are you sending feedback for? (required)</legend>
-            <label for="cat-ventures"><input id="cat-ventures" type="radio" name="game" class="inline" checked /> Cat Ventures</label>
-            <label for="cat-clinics"><input id="cat-clinics" type="radio" name="game" class="inline" /> Cat Clinics</label>
-        </fieldset>
+      <fieldset>
+          <legend>Which game are you sending feedback for? (required)</legend>
+          <label for="cat-ventures"><input id="cat-ventures" type="radio" name="game" class="inline" checked /> Cat Ventures</label>
+          <label for="cat-clinics"><input id="cat-clinics" type="radio" name="game" class="inline" /> Cat Clinics</label>
+      </fieldset>
 
-        <fieldset>
-        <!--select-->   
-            <label for="rating">Give us a rating
-            <select id="rating" name="rating">
-                <option value="">(rate our game)</option>
-                <option value="1">1 ()</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 ()</option>
-            </select>
-            </label>
-        </fieldset>
+      <!--select-->  
+      <fieldset>
+        <label for="rating">Give us a rating
+          <select id="rating" name="rating">
+            <option value="">(rate our game)</option>
+            <option value="1">1 (I didn't enjoy it at all)</option>
+            <option value="2">2 (I didn't really enjoy it)</option>
+            <option value="3">3 (it was okay)</option>
+            <option value="4">4 (I enjoyed it)</option>
+            <option value="5">5 (I loved it)</option>
+          </select>
+        </label>
+      </fieldset>
 
-        <fieldset>
-          <label for="favourite-part">
-            <legend>What were your favourite parts about the game?</legend>
-            <label for="characters"><input class="inline" id="characters" name="favourite-part" ype="checkbox"/>Characters</a></label>
-            <label for="gameplay"><input class="inline" id="gameplay" name="favourite-part" type="checkbox"/>Gameplay</a></label>
-            <label for="graphics"><input class="inline" id="graphics" name="favourite-part" type="checkbox"/>Graphics</a></label>
-            <label for="soundtrack"><input class="inline" id="soundtrack" name="favourite-part" type="checkbox"/>Soundtrack</a></label>
-            <label for="story"><input class="inline" id="story" name="favourite-part" type="checkbox"/>Story</a></label>
+      <!--checkbox: fave part-->
+      <fieldset>
+        <label for="favourite-part">
+          <legend>What were your favourite parts about the game?</legend>
+          <label for="characters"><input class="inline" id="characters" name="favourite-part" type="checkbox"/>Characters</a></label>
+          <label for="gameplay"><input class="inline" id="gameplay" name="favourite-part" type="checkbox"/>Gameplay</a></label>
+          <label for="graphics"><input class="inline" id="graphics" name="favourite-part" type="checkbox"/>Graphics</a></label>
+          <label for="soundtrack"><input class="inline" id="soundtrack" name="favourite-part" type="checkbox"/>Soundtrack</a></label>
+          <label for="story"><input class="inline" id="story" name="favourite-part" type="checkbox"/>Story</a></label>
+        </label>
+      </fieldset>
+      <!--checkbox: least fave-->>
+      <fieldset>
+        <label for="least-fave-part">
+          <legend>What should we improve on?</legend>
+          <label for="characters"><input class="inline" id="characters" name="least-fave-part" type="checkbox"/>Characters</a></label>
+          <label for="gameplay"><input class="inline" id="gameplay" name="least-fave-part" type="checkbox"/>Gameplay</a></label>
+          <label for="graphics"><input class="inline" id="graphics" name="least-fave-part" type="checkbox"/>Graphics</a></label>
+          <label for="soundtrack"><input class="inline" id="soundtrack" name="least-fave-part" type="checkbox"/>Soundtrack</a></label>
+          <label for="story"><input class="inline" id="story" name="least-fave-part" type="checkbox"/>Story</a></label>
+        </label>
+      </fieldset>
+
+      <!--textarea-->
+      <fieldset>
+          <label for="feedback">Tell us more!:
+            <textarea id="feedback" name="feedback" rows="3" cols="30" placeholder="I liked the part where the cat..."></textarea>
           </label>
         </fieldset>
 
-        <fieldset>
-            <!--textarea-->
-            <label for="feedback">Tell us more!:
-            <textarea id="feedback" name="feedback" rows="3" cols="30" placeholder="I liked the part where the cat..."></textarea>
-            </label>
-        </fieldset>
-
-        <!--submit-->
-        <input type="submit" value="Submit" />
-
-
+      <!--submit-->
+      <input type="submit" value="Submit" />
     </form>
   </body>
 </html>
