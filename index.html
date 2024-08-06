@@ -8,7 +8,7 @@
   
   <body>
     <h1 id="title">Cat Game Survey Form</h1> 
-    <p id="description"></p>    
+    <p id="description">Please tell us about your experience</p>    
     <form id="survey-form">
         <!--name, email, age-->
         <fieldset>
@@ -39,15 +39,14 @@
         </fieldset>
 
         <fieldset>
-        <!--checkbox-->
-            <label for="favourite-part">
-                <legend>What were your favourite parts about the game?</legend>
-                <input class="inline" id="favourite-part" type="checkbox"/>Characters</a>
-                <input class="inline" id="favourite-part" type="checkbox"/>Gameplay</a>
-                <input class="inline" id="favourite-part" type="checkbox"/>Graphics</a>
-                <input class="inline" id="favourite-part" type="checkbox"/>Soundtrack</a>
-                <input class="inline" id="favourite-part" type="checkbox"/>Story</a>
-            </label>
+          <label for="favourite-part">
+            <legend>What were your favourite parts about the game?</legend>
+            <label for="characters"><input class="inline" id="characters" name="favourite-part" ype="checkbox"/>Characters</a></label>
+            <label for="gameplay"><input class="inline" id="gameplay" name="favourite-part" type="checkbox"/>Gameplay</a></label>
+            <label for="graphics"><input class="inline" id="graphics" name="favourite-part" type="checkbox"/>Graphics</a></label>
+            <label for="soundtrack"><input class="inline" id="soundtrack" name="favourite-part" type="checkbox"/>Soundtrack</a></label>
+            <label for="story"><input class="inline" id="story" name="favourite-part" type="fav"/>Story</a></label>
+          </label>
         </fieldset>
 
         <fieldset>
