@@ -64,7 +64,7 @@ textarea{
 input[type="submit"]{
   display: block;
   width: 60%;
-  min-width: 300px;
+  min-width: 100px;
   margin: 1em auto;
   height: 2em;
   font-size: 1.1rem;
