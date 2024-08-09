@@ -20,14 +20,14 @@
       <!--radio: game-->
       <fieldset>
           <legend>Which game are you sending feedback for? </legend>
-          <label for="cat-ventures"><input id="cat-ventures" type="radio" name="game" class="inline" checked /> Cat Ventures</label>
-          <label for="cat-clinics"><input id="cat-clinics" type="radio" name="game" class="inline" /> Cat Clinics</label>
+          <label for="cat-ventures"><input id="cat-ventures" type="radio" name="game" class="inline" value="1" checked /> Cat Ventures</label>
+          <label for="cat-clinics"><input id="cat-clinics" type="radio" name="game" class="inline" value="2"/> Cat Clinics</label>
       </fieldset>
 
       <!--select-->  
       <fieldset>
         <label for="rating">Give our game a rating
-          <select id="rating" name="rating">
+          <select id="dropdown" name="rating">
             <option value="">(Rate our game)</option>
             <option value="1">1 (I didn't enjoy it at all)</option>
             <option value="2">2 (I didn't really enjoy it)</option>
@@ -69,7 +69,7 @@
         </fieldset>
 
       <!--submit-->
-      <input type="submit" id="Submit" />
+      <input type="submit" id="submit" />
     </form>
   </body>
 </html>
