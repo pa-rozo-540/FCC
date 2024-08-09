@@ -1,0 +1,82 @@
+body { 
+  width: 100%; 
+  height: 100vh; 
+  margin: 0; 
+  background-image: linear-gradient(115deg, rgba(31, 114, 191, 0.8), rgba(0, 0, 0, 0.8)), url('https://garden.spoonflower.com/c/11027972/p/f/m/JMIb_NAWwkmZn25bDshsA_9vh_A7cMW2MvWwgmgx70vgsGIh7SR5-2GX5g/chubby%20kawaii%20cats.jpg'); 
+  color: black;
+  font-size: 16px;
+  font-family: Courier;
+}
+
+label{
+  display: block;
+  margin: 0.5rem 0;
+}
+
+h1, p{
+  margin: 1em auto;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+fieldset{
+  border: none;
+  padding: 1rem 2em;
+}
+
+input,textarea,select{
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+  font-family: courier;
+  padding: 5px 10px;
+}
+
+input, select{
+  background-color:#;
+  border: 0px;
+  border-bottom: 2px solid black;
+  border-radius: 10px;
+  color: black;
+  font-size: 16px;
+  padding-top: 5px;
+}
+
+form{
+  width: 60vw;
+  max-width: 500px;
+  min-height: 300px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: #fb8600c5;
+}
+
+textarea{
+  background-color: rgb(255, 255, 255);
+  border: 0px;
+  border-bottom: 2px solid black;
+  border-radius: 10px;
+  color: black;
+  font-size: 16px;
+}
+
+input[type="submit"]{
+  display: block;
+  width: 60%;
+  min-width: 300px;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #ba4f32;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+}
+
+.inline{
+  display: inline; 
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
